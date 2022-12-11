@@ -51,24 +51,32 @@ html, body {
 
 .main {
     border: 1px solid black;
-    height: 500px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 2rem;
+    background-color: #025B62;
 
 }
 
-.page-container{
+.page-container {
     max-width: 1024px;
     margin: auto;
+
 }
 
 .main-content {
     display: flex;
     align-items: center;
     border: 2px solid gray;
+    background-color: white;
+
 }
 
-.img-container{
+.main-content + .main-content {
+    margin-top: 2rem;
+}
+
+.img-container {
     padding: 1rem 2rem;
     width: 45%;
 }
@@ -78,12 +86,28 @@ html, body {
     width: 100%;
 }
 
-.text-content-container{
+.text-content-container {
 
 }
 
-.text-container{
+.text-container {
     padding: 1rem 2rem;
     width: 55%;
 
+}
+
+.page-footer {
+    display: flex;
+    border-top: 1px solid black;
+    align-items: center;
+    height: 100px;
+}
+
+.page-footer div {
+    width: 100%;
+}
+
+
+.page-footer div:last-child{
+    text-align: right;
 }
